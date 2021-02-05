@@ -1,8 +1,21 @@
-body {
+#background {
+    height: 2000px;
+    width: 100%;
     position: absolute;
+    object-fit: cover;
+
+
+
+
+
+
+
+    /*position: absolute;
     background-image: url(../Images/planting-desk.jpg);
     background-size:cover;
-    overflow: scroll;
+    background-repeat: no-repeat;
+    overflow-y: scroll;
+    height: 1000px;*/
 }
 #pot {
     position: absolute;
@@ -35,11 +48,11 @@ body {
     z-index: -1;
   }
 
-  .plant {
+  /*.plant {
       position: absolute;
-      top: 100vh;
-      left: 50vw;
-  }
+      top: 800px;
+      left: 600px;
+  }*/
 
   p {
     z-index: 2;
