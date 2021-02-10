@@ -3,19 +3,9 @@
     width: 100%;
     position: absolute;
     object-fit: cover;
+    z-index: -5;
+    top: 0px;
 
-
-
-
-
-
-
-    /*position: absolute;
-    background-image: url(../Images/planting-desk.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    overflow-y: scroll;
-    height: 1000px;*/
 }
 #pot {
     position: absolute;
@@ -45,24 +35,147 @@
     border-radius: 20%;
     margin-top: 20px;
     margin-left: 50px;
+    z-index: -2;
+  }
+
+  #soil_wet {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    background: rgb(48, 25, 11);
+    border-radius: 20%;
+    margin-top: 20px;
+    margin-left: 50px;
     z-index: -1;
   }
 
-  /*.plant {
-      position: absolute;
-      top: 800px;
-      left: 600px;
-  }*/
-
-  p {
-    z-index: 2;
+ p {
+    z-index: 5;
     background-color: #d9c0ad;
     text-align: center;
-    padding: 12px;
-    width: 300px;
-    height: 20px;
+    padding: 22px;
+    width: 350px;
+    height: 20px, auto;
     color: #312e47;
     font-family: helvetica;
+    font-size: 12pt;
     border-radius: 6px;
     margin:150px auto;
+    margin-top: 150px;
 }
+
+.plant {
+    position: fixed;
+    margin-left: 70%;
+    margin-right: 30%;
+    top: 70%;
+  }
+
+.blank {
+    z-index: 10;
+    position: fixed;
+    background-color: transparent;
+    height: 250px;
+    width: 250px;
+    margin-left: 70%;
+    margin-right: 30%;
+    top: 70%;
+
+}
+
+
+#pothos {
+position: absolute;
+height: 800px;
+width: auto;
+top: -50px;
+
+}
+
+#monstera {
+    position: absolute;
+    transform: rotate(-120deg);
+    height: 600px;
+    margin-left: 70vw;
+    top: 600px;
+}
+
+ .seed_top {
+    position: absolute; 
+    z-index: 5;
+    background-color: rgb(243, 237, 233);
+    height: 80px;
+    width: 55px;
+    border-radius: 50%;
+    left:0;
+    top: 0;
+ }
+
+ .seed_bot {
+    position: absolute;
+    width: 5;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid rgb(243, 237, 233);
+    border-radius: 30%;
+    top:50px;
+    left: 0px;
+ }
+
+ .seed_shad {
+    position: absolute;
+    z-index: 5;
+    height: 60px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgb(230, 221, 216);
+    top: 15px;
+    left: 22px;
+ }
+
+ .seed {
+     transform: rotate(20deg);
+     margin-left: 50%;
+     margin-right: 50%;
+     margin-top: -100px;
+ }
+
+ .can_body {
+    position: absolute; 
+    z-index: 5;
+    height: 160px;
+    width: 160px;
+    border-radius: 15%;
+    background-color: rgb(52, 174, 211);
+    left: 90px;
+    top: -430px;
+ }
+ .can_handle {
+    position: absolute; 
+    width: 170px;
+    height: 170px;
+    margin-top: -480px;
+    margin-left: 20px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 15px solid rgb(37, 143, 175)
+
+ }
+ .can_spout {
+    position: absolute;
+    border-bottom: 150px solid rgb(37, 143, 175);
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0px;
+	width: 15px;
+    transform: rotate(50deg);
+    margin-top: -420px;
+    margin-left: 270px;
+ }
+ .watering_can {
+     position: absolute;
+     top: 285%;
+     margin-left: 48%;
+     margin-right: 52%;
+ }
