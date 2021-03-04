@@ -1,0 +1,78 @@
+body {
+    background-color: #7b8d7a5b;
+}
+
+h1, h2, h3, h4, h5 {
+    margin-left: 30px;
+
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: white;
+    font-size: 36pt;
+    padding-top: 10px;
+    line-height: 0px;
+}
+
+h2 {
+    padding-top: 30px;
+    color: #7b8d7a;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 16pt;
+}
+a {
+    color: #312e477a;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 16pt;
+}
+
+a:hover {
+    color: #312e47af;
+}
+
+h3 {
+    color: #312e47cb;
+    padding-top: 2px;
+    padding-bottom: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13pt;
+}
+h4 {
+    color: #7b8d7a;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10pt;
+    line-height: 0;
+}
+
+h5{
+    color: #312e476c;
+    font-family: 'Open Sans', sans-serif;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11pt;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    text-align: justify;
+    animation-name: stretch;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    color: #312e47;
+}
+
+p:hover{
+    animation:none;
+}
+
+@keyframes stretch{
+    0%, 100%{
+        transform:scale(1,1);
+    }
+    50% {
+        transform:scale(1.1,1);
+    }
+}
