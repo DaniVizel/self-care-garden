@@ -1,5 +1,5 @@
 
-body {
+.body_1 {
     background-image: url(../Images/rainy-window.jpeg);
     background-color: rgba(53, 52, 90,0.8);
     background-blend-mode:multiply;
@@ -99,6 +99,10 @@ input[type=text] {
       margin-right: auto ;
       margin-top: 30%;
   }
+.plant_1:hover {
+    transform: scale(1.15, 1.15);
+}
+
   .fadein {
       opacity: 0;
       animation-name: fadein;

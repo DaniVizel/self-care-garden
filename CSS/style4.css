@@ -1,0 +1,141 @@
+#empty {
+    position: absolute;
+    top:0;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+    z-index: 100;
+}
+#gradientbkgd {
+    position: absolute;
+    top:0;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image: radial-gradient(circle, rgb(36, 34, 56), black);
+}
+#blackbkgd {
+    position: absolute;
+    top: 0;
+    z-index: 50;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    animation: gradientpulse;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes gradientpulse {
+    0%, 100% {
+        opacity: 80%;
+    }
+    50% {
+        opacity: 20%;
+    }
+}
+p {
+    position: relative;
+    z-index: 80;
+    background-color: #d9c0ad;
+    text-align: center;
+    padding: 22px;
+    width: 350px;
+    height: 20px, auto;
+    color: #312e47;
+    font-family: helvetica;
+    font-size: 12pt;
+    border-radius: 6px;
+    margin: auto;
+    margin-top: 200px;
+}
+h2 {
+    position: relative;
+    z-index: 80;
+    color: #9895b352;
+    font-family: helvetica;
+    font-weight: lighter;
+    font-size: 18pt;
+    text-align: center;
+    margin: 150px auto;
+    top: -60px;
+}
+.fadein {
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein{
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+#pot {
+    position: absolute;
+    background: rgb(194, 88, 49);
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+#rim {
+    position: absolute;
+    background: coral;
+    width: 230px;
+    height: 60px;
+    border-radius: 22px;
+    margin-top: 50px;
+    margin-left: 35px;
+    z-index: +1;
+}
+
+  #soil_wet {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    background: rgb(48, 25, 11);
+    border-radius: 20%;
+    margin-top: 20px;
+    margin-left: 50px;
+    z-index: -1;
+  }
+
+    #gif {
+        position: absolute;
+        height: 200px;
+        width: auto;
+        margin-top: -160px;
+        left: 50px;
+        z-index: -1;
+}
+
+  .plant {
+    position: absolute;
+    z-index: 100;
+    margin-left: 40vw;
+    margin-right: 60vw;
+    top: 400px;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein{
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}

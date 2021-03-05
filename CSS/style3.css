@@ -1,16 +1,18 @@
 .empty {
     position: absolute;
-    height: 2100px;
+    height: 1000px;
     width: 100vw;
 }
 
 body {
     background-image: url(../Images/window-sill.gif);
     background-size:cover;
+    width: max-content;
     background-repeat: no-repeat;
 }
 
 p {
+    position: relative;
     z-index: 5;
     background-color: #d9c0ad;
     text-align: center;
@@ -81,3 +83,114 @@ p {
     top: 185%;
   }
 
+#bookshelf_empty {
+    position: absolute;
+    height: auto;
+    width: 800px;
+    top: 1830px;
+    left: -30px;
+    opacity: 80%;
+
+}
+#book_1 {
+    position: absolute;
+    background-color: rgb(38, 63, 55);
+    border-radius: 5%;
+    height: 200px;
+    width: 40px;
+    top: 1895px;
+    left: 20px;
+
+}
+#book_2 {
+    position: absolute;
+    background-color: rgb(60, 86, 131);
+    border-radius: 5%;
+    height: 230px;
+    width: 30px;
+    top: 1865px;
+    left: 60px;
+
+}
+#book_3 {
+    position: absolute;
+    background-color: rgb(25, 21, 34);
+    border-radius: 5%;
+    height: 60px;
+    width: 300px;
+    top: 2030px;
+    left: 120px;
+
+}
+#book_4 {
+    position: absolute;
+    background-color: rgb(76, 104, 109);
+    border-radius: 5%;
+    height: 75px;
+    width: 250px;
+    top: 1960px;
+    left: 135px;
+
+}
+#book_5 {
+    position: absolute;
+    background-color: rgb(173, 159, 142);
+    border-radius: 5%;
+    height: 35px;
+    width: 290px;
+    top: 1935px;
+    left: 125px;
+    transition: all .5s ease;
+
+}
+#book_5:hover {
+    animation: bounce .5s;
+    animation-fill-mode: forwards;
+
+}
+#book_5:after {
+    animation: bounce .5s;
+    animation-fill-mode: backwards;
+
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+#book_6 {
+    position: absolute;
+    background-color: rgb(15, 57, 65);
+    border-radius: 5%;
+    height: 180px;
+    width: 40px;
+    top: 1915px;
+    left: 585px;
+    transform: rotate(20deg);
+
+}
+#book_7 {
+    position: absolute;
+    background-color: rgb(27, 107, 76);
+    border-radius: 5%;
+    height: 210px;
+    width: 50px;
+    top: 1885px;
+    left: 650px;
+
+}
+#book_8 {
+    position: absolute;
+    background-color: rgb(68, 92, 89);
+    border-radius: 5%;
+    height: 250px;
+    width: 20px;
+    top: 1865px;
+    left: 530px;
+    transform: rotate(40deg);
+
+}

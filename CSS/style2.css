@@ -71,12 +71,9 @@
     top: 70%;
   }
 
-  .plant_bounce {
-    position: fixed;
-    margin-left: 70%;
-    margin-right: 30%;
-    top: 70%;
-  }
+.plant:hover {
+    transform: scale(1.15, 1.15);
+}
 
 .blank {
     z-index: 10;
@@ -148,9 +145,19 @@ top: -50px;
      margin-top: -100px;
  }
  .seed:hover {
-     height: '+=100px';
-     width: '+=100px';
- }
+        animation-name: wiggle;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+    }
+
+@keyframes wiggle {
+    0%, 50%, 100% {
+        transform: rotate(20deg);
+    }
+    25%, 75% {
+        transform: rotate(40deg);
+    }
+}
 
  .can_body {
     position: absolute; 
@@ -191,16 +198,5 @@ top: -50px;
      margin-right: 52%;
  }
  .watering_can:hover {
-    animation-name: spin;
-    animation-duration: 2s;
-    transform-origin: top right;
-}
-
-@keyframes spin{
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+    transform: translateY(-50px);
 }
