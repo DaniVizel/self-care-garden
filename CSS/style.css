@@ -1,4 +1,8 @@
-
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 .body_home {
     background-image: url(../Images/rainy-window.jpeg);
     background-color: rgba(53, 52, 90,0.8);
@@ -6,18 +10,18 @@
     background-size:cover;
     background-repeat: no-repeat;
 }
-#plantroom_background {
-    height: 2000px;
-    width: 100%;
-    position: absolute;
-    object-fit: cover;
-    z-index: -5;
-    top: 0px;
-
+#plantroom_everything{
+    width:100vw;
+    height:150vw;
+    position: relative;
+    background: url(../Images/planting-desk.jpg);
+    background-position: center 100%;
+    background-size: cover;
+    overflow:hidden;
 }
 p {
     z-index: 5;
-    background-color: #d9c0ad;
+    background-color: #dfcaba;
     text-align: center;
     padding: 12px;
     width: 350px;
@@ -26,8 +30,12 @@ p {
     font-family: 'EB Garamond', serif;
     font-size: 14pt;
     border-radius: 6px;
+    border-style: outset;
+    border-width: 5px;
+    border-color: #ebdacd;
     margin:150px auto;
     margin-top: 150px;
+    orphans: 2;
 }
 input[type=text] {
     border: 3px solid #d9c0ad;
@@ -74,7 +82,7 @@ input[type=text] {
     background: rgb(194, 88, 49);
     width: 200px;
     height: 200px;
-    border-radius: 20%;
+    border-radius: 12%;
     margin-top: 50px;
     margin-left: 50px;
 }
@@ -120,14 +128,14 @@ input[type=text] {
   }
 .plant_room1 {
     position: fixed;
-    margin-left: 70%;
-    margin-right: 30%;
+    margin-left: 75%;
+    margin-right: 25%;
     top: 70%;
 }
 .plant_room3 {
     position: fixed;
-    margin-left: 70%;
-    margin-right: 30%;
+    margin-left: 75%;
+    margin-right: 25%;
     top: 70%;
 }
 .blank {
@@ -251,35 +259,35 @@ input[type=text] {
  }
  .can_handle {
     position: absolute; 
-    width: 170px;
-    height: 170px;
+    width: 200px;
+    height: 200px;
     margin-top: -480px;
     margin-left: 20px;
     border-radius: 100%;
     background-color: transparent;
-    border: 15px solid rgb(37, 143, 175)
+    border: 16px solid rgb(37, 143, 175)
 
  }
  .can_spout {
     position: absolute;
     border-bottom: 150px solid rgb(37, 143, 175);
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
 	height: 0px;
-	width: 15px;
+	width: 30px;
     transform: rotate(50deg);
     margin-top: -420px;
     margin-left: 270px;
  }
  .watering_can {
      position: absolute;
-     top: 285%;
-     margin-left: 48%;
-     margin-right: 52%;
+     margin-top: 1600px;
+     margin-left: 710px;
+     z-index: 100;
  }
  .can_interact {
     animation-name: can_wiggle;
-    animation-duration: 1.5s;
+    animation-duration: 1.25s;
     animation-iteration-count: 1;
 }
 @keyframes can_wiggle {
@@ -291,31 +299,35 @@ input[type=text] {
     }
 }
 /* window sill styles*/
+#sunnywindow_everything {
+    width: 100vw;
+    height: 150vw;
+    background:url(../Images/window-sill.gif);
+    background-size: cover;
+    position: relative;
+    background-position: center 100%;
+    overflow: hidden;
+}
 .p_window {
     position: relative;
     z-index: 5;
     background-color: #d9c0ad;
     text-align: center;
-    padding: 22px;
+    padding: 12px;
     width: 350px;
     height: 20px, auto;
     color: #312e47;
     font-family: 'EB Garamond', serif;
     font-size: 14pt;
     border-radius: 6px;
-    margin:150px auto;
-    margin-top: 120%;
+    margin-top: 420px;
+    margin-bottom: 1130px;
+
 }
 .empty {
     position: absolute;
     height: 1000px;
     width: 100vw;
-}
-.body_window {
-    background-image: url(../Images/window-sill.gif);
-    background-size:cover;
-    width: max-content;
-    background-repeat: no-repeat;
 }
 .fadein_window {
     opacity: 0;
@@ -329,7 +341,8 @@ input[type=text] {
     position: absolute;
     margin-left: 60%;
     margin-right: 40%;
-    top: 185%;
+    top: 1400px;
+    z-index: 25;
   }
   #bookshelf_empty {
     position: absolute;
@@ -492,6 +505,25 @@ input[type=text] {
     top: -60px;
 }
 /* window_final styles*/
+#gradientbkgd_final {
+    position: absolute;
+    top:0;
+    height: 200vh;
+    width: 100vw;
+    background-color: black;
+    background-image: radial-gradient(circle, rgb(36, 34, 56), black);
+}
+#blackbkgd_final {
+    position: absolute;
+    top: 0;
+    z-index: 50;
+    height: 200vh;
+    width: 100vw;
+    background-color: black;
+    animation: gradientpulse;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
 #gif {
     position: absolute;
     height: 200px;
@@ -534,5 +566,8 @@ input[type=text] {
     font-size: 14pt;
     border-radius: 6px;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 110px;
+}
+.p_first {
+    margin-bottom: 500px;
 }
