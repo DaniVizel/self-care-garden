@@ -1,33 +1,33 @@
 $(document).ready(function(){
 
-    $(".plant_1").mouseenter(function() {
-        $(".plant_1").animate({
-            height: '+=100px',
-            width: '+=100px',
-        });
+    $(".plant_home").mouseenter(function(){
+        $(".plant_home").addClass("hover");
     });
-    $(".plant_1").mouseleave(function() {
-        $(".plant_1").animate({
-            height: '-=100px',
-            width: '-=100px',
-        });
+    $(".plant_home").mouseleave(function(){
+        $(".plant_home").removeClass("hover");
     });
-
-    $(".seed").mouseenter(function() {
-        $(".seed").animate({
-        height: '+=20px',
-        width: '+=20px',
-        });
+    $(".seed").mouseenter(function(){
+        $(".seed").addClass("seed_wiggle");
     });
-    $(".seed").mouseleave(function() {
-        $(".seed").animate({
-            height: '-=20px',
-            width: '-=20px',
-        });
+    $(".seed").mouseleave(function(){
+        $(".seed").removeClass("seed_wiggle");
     });
-    $(".blank").hover(function() {
-        $(".plant_bounce").effect( "bounce", {distance:50px, }, slow );
-        });
+    $(".watering_can").mouseenter(function(){
+        $(".watering_can").addClass("can_interact");
     });
-
+    $(".watering_can").mouseleave(function(){
+        $(".watering_can").removeClass("can_interact");
+    });
+    $(".blank").mouseenter(function(){
+        $(".plant_room3").addClass("hover");
+    });
+    $(".blank").mouseleave(function(){
+        $(".plant_room3").removeClass("hover");
+    });
+    $("#book_5").mouseenter(function(){
+        $("#book_5").addClass("book_5_bounce");
+    });
+    $("#book_5").mouseleave(function(){
+        $("#book_5").removeClass("book_5_bounce");
+    });
 });
